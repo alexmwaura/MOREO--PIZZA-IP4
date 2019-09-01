@@ -29,8 +29,12 @@ As a user of the website you will be able to:
 ## Behaviour Driven Development (BDD)
 |Behaviour 	           |    Input 	                 |       Output          |
 |----------------------------------------------|:-----------------------------------:|-----------------------------:|       
-|Page loads                          |   User enters information in a form           | displays checkout button for order summary |   |
-|If delivery                         |   user enters name and location           | displays checkout button for order summary       | |
+|Page loads                          |   User enters information in a form           | displays checkout button for order summary    | |
+|side navbar                         |   click view,                                 | displays next page,                           | |
+|side navbar                         |   click home,                                 | Redirects home                                | |
+|                                    |   click order                                 | displays form section for order               | |
+|If Pickup                           |   click checkout button                       | displays total order summary                  | |
+|If delivery                         |   user enters name and location              | displays checkout button for order summary     | |
 
 
 ### Installing
