@@ -222,6 +222,7 @@ $(document).ready(function () {
             var total = (sizePrice + crustPrice + addToppings) * pizzaNumber;
             var totalPrice = "TOTAL COST: KSH: " + total;
             $("#total").text(totalPrice);
+            
 
             
         });
@@ -229,12 +230,9 @@ $(document).ready(function () {
     });
 
     $("#deliver").click(function () {
-        alert ("ENTER, YOUR NAME!");
-        var person = prompt ("ENTER NAME PLEASE");
-
         alert("ENTER, YOUR LOCATION PLEASE!");
         var location = prompt("INPUT ADDRESS PLEASE!");
-        alert( person  +  "YOUR ORDER HAS BEEN RECIEVED AND WILL BE DELIVERED AT " + location + " ON CHECKOUT");
+        alert("YOUR ORDER HAS BEEN RECIEVED AND WILL BE DELIVERED AT " + location);
 
         $("#check").show();
         var sizePrice;
@@ -343,7 +341,7 @@ $(document).ready(function () {
             var price = "KSH " + (sizePrice + crustPrice + addToppings) * pizzaNumber;
             $("#pizza-amount").text(price);
 
-            var display = $("#number").val() + " " + $("input[name='size']:checked").val() + " " + $("input[name='crust']:checked").val() + " " + $("#toppings  option:selected").val();
+            var display = $("#number").val() + " " + $("input[name='size']:checked").val() + " " + $("input[name='crust']:checked").val() + " " + $("#toppings option:selected").val();
             $("#details").text(display);
             $("#delivery").show();
             $("#charges").show();
@@ -351,6 +349,7 @@ $(document).ready(function () {
             var total = (sizePrice + crustPrice + addToppings) * pizzaNumber;
             var totalPrice = "TOTAL COST: KSH: " + (total + 300);
             $("#total").text(totalPrice);
+            
 
             
 
@@ -358,14 +357,5 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function (){
-    $("#toppings").multiSelect({
-        nonSelect: "select toppings",
-        enableFiltering: true,
-        enableCaseInsensitiveFiltering: true,
-        buttonWidth: "400px",
 
-    });
-
-});
 
