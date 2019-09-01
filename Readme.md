@@ -1,13 +1,13 @@
 
 #  MOREO RESTAURANT
 
- DELANI STUDIO
+ MOREO-RESTAURANT
 
 
 
 ## Versioning
 
- Delani-studio-V1.0 
+ MOREO-RESTAURANT-V1.0 
 
 ## Author
 
