@@ -110,6 +110,25 @@ h1{
     }
 
 }
+.price{
+
+    animation: bounce 3s infinite;
+    margin-top: 0.5vh;
+}
+@keyframes bounce {
+
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-55px);
+    }
+    60% {
+        transform: translateY(-45px);
+    }
+
+}
+
 .address{
     text-align: center;
     align-content: center;
@@ -128,7 +147,222 @@ h1{
     background-position: center;
 
 }
-.img-fluid{
+.img-fluid-1, .img-fluid-S1, .img-fluid-S2, .img-fluid-S3{
     height: 30vh;
+    justify-content: space-around;
 
+}
+/* .img-fluid-S3{
+    height: 30vh;
+    justify-content: space-evenly;
+    padding-left: 30%;
+    margin-top: -33%;
+} */
+.img-fluid-2{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.img-fluid-3{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.img-fluid-4{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.img-fluid-5{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.img-fluid-6{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.img-fluid-7{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.img-fluid-8{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.img-fluid-9{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.img-fluid-10{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.img-fluid-11{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.img-fluid-12{
+    height: 30vh;
+    justify-content: space-around;
+
+}
+.pizza{
+    margin-top: 10px;
+    font-family: 'Crimson Text', serif;
+    font-size: 20PX;
+}
+#pizza{
+    padding-top: 0%;
+    margin: 0%;
+    justify-content: flex-end;
+}
+#trial{
+    padding-top: 40px;
+    font-size: x-large;
+}
+
+/* #work1:hover img {
+    transform: scale(0.5) ;
+    transition: all 50s ease;
+} */
+
+/* #work2:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+}
+#work3:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+}
+#work4:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+}
+
+#work5:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+}
+#work6:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+}
+#work7:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+}
+#work8:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+}
+#work9:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+}
+#work10:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+}
+#work11:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+}
+#work12:hover img {
+    transform: scale(1.2) ;
+    transition: all 2s ease;
+} */
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12, .pS1, .pS2,.pS3{
+    display: none;
+}
+#pizza-toppings{
+    font-size: 5vh;
+}
+#pizza-crust{
+    font-size: 5vh;
+}
+
+
+.jumbotron{
+    background: black;
+    opacity: 0.8;
+}
+.final{
+    /* opacity: 0.8; */
+}
+
+#number{
+    font-size: 20px;
+}
+
+#trial{
+    padding-top: 40px;
+    font-size: x-large;
+}
+#total{
+    justify-content: center;
+    height: fit-content;
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+    font-size: x-large;
+
+}
+#charges{
+    display: none;
+}
+
+#details{
+    font-size: x-large;
+}
+
+button[type=submit]:hover{
+color: rgb(128, 98, 0);
+cursor: pointer;
+background: goldenrod;
+text-align: center;
+font-family: 'Abril Fatface', cursive;
+}
+button[type=submit]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: x-large;
+
+    
+    
+}
+#delivery,#order,#price,#check,#addOrder,#charges{
+    display: none;
+}
+
+#choose{
+    text-align: center;
+    background-color: black;
+}
+#pizza-size{
+    text-align: center;
+    background-color: black;
+}
+.world{
+    font-size: 50px;
+}
+
+#toppings{
+    font-size: 20px;
+    background-color: black;
+    opacity: none;
+}
+option{
+    /* opacity: 0.1; */
 }
