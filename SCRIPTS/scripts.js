@@ -229,9 +229,12 @@ $(document).ready(function () {
     });
 
     $("#deliver").click(function () {
+        alert ("ENTER, YOUR NAME!");
+        var person = prompt ("ENTER NAME PLEASE");
+
         alert("ENTER, YOUR LOCATION PLEASE!");
         var location = prompt("INPUT ADDRESS PLEASE!");
-        alert("YOUR ORDER HAS BEEN RECIEVED AND WILL BE DELIVERED AT " + location + " ON CHECKOUT");
+        alert( person  +  "YOUR ORDER HAS BEEN RECIEVED AND WILL BE DELIVERED AT " + location + " ON CHECKOUT");
 
         $("#check").show();
         var sizePrice;
