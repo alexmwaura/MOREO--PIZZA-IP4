@@ -110,3 +110,25 @@ h1{
     }
 
 }
+.address{
+    text-align: center;
+    align-content: center;
+    position: center;
+    background: black;
+    background-size: cover;
+    background-position: center;
+
+}
+.dance{
+    text-align: center;
+    align-content: center;
+    position: center;
+    background: black;
+    background-size: cover;
+    background-position: center;
+
+}
+.img-fluid{
+    height: 30vh;
+
+}
