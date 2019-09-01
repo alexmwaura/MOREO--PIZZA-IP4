@@ -152,12 +152,7 @@ h1{
     justify-content: space-around;
 
 }
-/* .img-fluid-S3{
-    height: 30vh;
-    justify-content: space-evenly;
-    padding-left: 30%;
-    margin-top: -33%;
-} */
+
 .img-fluid-2{
     height: 30vh;
     justify-content: space-around;
@@ -228,56 +223,6 @@ h1{
     font-size: x-large;
 }
 
-/* #work1:hover img {
-    transform: scale(0.5) ;
-    transition: all 50s ease;
-} */
-
-/* #work2:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-}
-#work3:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-}
-#work4:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-}
-
-#work5:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-}
-#work6:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-}
-#work7:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-}
-#work8:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-}
-#work9:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-}
-#work10:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-}
-#work11:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-}
-#work12:hover img {
-    transform: scale(1.2) ;
-    transition: all 2s ease;
-} */
 .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12, .pS1, .pS2,.pS3{
     display: none;
 }
@@ -363,6 +308,6 @@ button[type=submit]{
     background-color: black;
     opacity: none;
 }
-option{
-    /* opacity: 0.1; */
+floaty{
+    float: right;
 }
