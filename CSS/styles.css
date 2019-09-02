@@ -318,7 +318,7 @@ button[type=submit]{
     float: right;
 }
 @media screen and (max-width: 1060px) {
-    .nav-toggle-btn { width:50%; }
+    .nav-toggle-btn { width:30%; }
     .content { width:100%; margin:0; border:none; }
     .content {background-image: url(../IMAGES/wine.jpg)}
     .content{background-repeat: none;}
@@ -327,7 +327,7 @@ button[type=submit]{
 }
 
 @media screen and (max-width: 768px) {
-    .nav-toggle-btn { width:50%; }
+    .nav-toggle-btn { width:30%; }
     .content { width:100%; margin:0; border:none; }
     .content {background-image: url(../IMAGES/tukule.jpg)}
     .content{background-repeat: none;}
