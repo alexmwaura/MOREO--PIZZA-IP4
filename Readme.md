@@ -34,7 +34,7 @@ As a user of the website you will be able to:
 |side navbar                         |   click home,                                 | Redirects home                                | |
 |                                    |   click order                                 | displays form section for order               | |
 |If Pickup                           |   click checkout button                       | displays total order summary                  | |
-|If delivery                         |   user enters name and location              | displays checkout button for order summary     | |
+|If delivery                         |   user enters name and location               | displays checkout button for order summary     | |
 
 
 ### Installing
