@@ -222,7 +222,6 @@ $(document).ready(function () {
             var total = (sizePrice + crustPrice + addToppings) * pizzaNumber;
             var totalPrice = "TOTAL COST: KSH: " + total;
             $("#total").text(totalPrice);
-            
 
             
         });
@@ -324,17 +323,12 @@ $(document).ready(function () {
             addToppings += 150;
         }
         
-        
+
 
         
         else {
             alert("CHOOSE TOPPINGS TO CONTINUE WITH ORDER!");
         }
-
-
-
-
-
 
         $("#check").click(function () {
             $("#price").show();
@@ -351,7 +345,6 @@ $(document).ready(function () {
             var total = (sizePrice + crustPrice + addToppings) * pizzaNumber;
             var totalPrice = "TOTAL COST: KSH: " + (total + 300);
             $("#total").text(totalPrice);
-            
 
             
 
@@ -360,4 +353,248 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function () {
+    $('form#form').submit(function (event) {
+        event.preventDefault();
+    });
+
+
+    $("#pick").click(function () {
+        $("#price").show();
+        $("#order").show();
+        $("#check").show();
+        var sizePrice;
+        var choosenSize = $("input[name='size']:checked").val();
+        
+        if (choosenSize === "Small") {
+            sizePrice = 500;
+        }
+        else if (choosenSize === "Medium") {
+            sizePrice = 700;
+        }
+        else if (choosenSize === "Large") {
+            sizePrice = 1000;
+        }
+        else {
+            alert("CHECK SIZE PLEASE!");
+        }
+
+
+        var crustPrice;
+        var choosenCrust = $("input[name='crust']:checked").val();
+
+        if ((choosenCrust === "Crispy") || (choosenCrust === "Stuffed") && (choosenSize === "Small")) {
+            crustPrice = 100;
+        }
+        else if ((choosenCrust === "Crispy") || (choosenCrust === "Stuffed") && (choosenSize === "Medium")) {
+            crustPrice = 150;
+        }
+        else if ((choosenCrust === "Crispy") || (choosenCrust === "Stuffed") && (choosenSize === "Large")) {
+            crustPrice = 200;
+        }
+        else if ((choosenCrust === "Gluten-free") && (choosenSize === "Small")) {
+            crustPrice = 50;
+        } else if ((choosenCrust === "Gluten-free") && (choosenSize === "Medium")) {
+            crustPrice = 100;
+        } else if ((choosenCrust === "Gluten-free") && (choosenSize === "Large")) {
+            crustPrice = 150;
+        }
+        else {
+            alert("CHOOSE CRUST TO CONTINUE WITH ORDER!");
+        }
+
+
+        var addToppings = 0;
+        var choosenToppings = $("#toppings option:selected").val();
+        if ((choosenToppings === "Onions") || (choosenToppings === "Peppers") && (choosenSize === "Small")) {
+            addToppings += 20;
+        }
+        else if ((choosenToppings === "Onions") || (choosenToppings === "Peppers") && (choosenSize === "Large") || (choosenSize === "medium")) {
+            addToppings += 30;
+        }
+        else if ((choosenToppings === "Pepperoni") && (choosenSize = "Small")) {
+            addToppings += 50;
+        }
+        else if ((choosenToppings === "Pepperoni") && (choosenSize = "Medium")) {
+            addToppings += 70;
+        }
+        else if ((choosenToppings === "Pepperoni") && (choosenSize = "Large")) {
+            addToppings += 100;
+        }
+        else if ((choosenToppings === "Bacon") && (choosenSize = "Small")) {
+            addToppings += 80;
+        }
+        else if ((choosenToppings === "Bacon") && (choosenSize = "Medium")) {
+            addToppings += 100;
+        }
+        else if ((choosenToppings === "Bacon") && (choosenSize = "Large")) {
+            addToppings += 150;
+        }
+        else if ((choosenToppings === "Barbecue") || (choosenToppings === "taco") && (choosenSize = "Small")) {
+            addToppings += 100;
+        }
+        else if ((choosenToppings === "Barbecue") || (choosenToppings === "taco") && (choosenSize = "Medium")) {
+            addToppings += 150;
+        }
+        else if ((choosenToppings === "Barbecue") || (choosenToppings === "taco") && (choosenSize = "Large")) {
+            addToppings += 200;
+        }
+        else if ((choosenToppings === "Cheese") || (choosenToppings === "Mushrooms") && (choosenSize = "Small")) {
+            addToppings += 80;
+        }
+        else if ((choosenToppings === "Cheese") || (choosenToppings === "Mushrooms") && (choosenSize = "Medium")) {
+            addToppings += 120;
+        }
+        else if ((choosenToppings === "Cheese") || (choosenToppings === "Mushrooms") && (choosenSize = "Large")) {
+            addToppings += 150;
+        }
+        else {
+            alert("CHOOSE TOPPINGS TO CONTINUE WITH ORDER!");
+        }
+        
+
+
+
+        $("#check").click(function () {
+            $("#price").hide();
+            $("#order").show();
+            $("#delivery").hide();
+            $("#charges").hide();
+            $("#total").show();
+            var pizzaNumber = parseInt($("#number").val());
+
+            $("#pizza-amount").hide();
+
+            var display = $("#number").val() + " " + $("input[name='size']:checked").val() + ", " + $("input[name='crust']:checked").val() + ", " + $("#toppings option:selected").val();
+            $("#details").text(display);
+            var total = (sizePrice + crustPrice + addToppings) * pizzaNumber;
+            var totalPrice = "TOTAL COST: KSH: " + total;
+            $("#total").text(totalPrice);
+
+            
+        });
+
+    });
+
+    $("#deliver").click(function () {
+        alert("ENTER, YOUR LOCATION PLEASE!");
+        var location = prompt("INPUT ADDRESS PLEASE!");
+        alert("YOUR ORDER HAS BEEN RECIEVED AND WILL BE DELIVERED AT " + location);
+
+        $("#check").show();
+        var sizePrice;
+        var choosenSize = $("input[name='size']:checked").val();
+        if (choosenSize === "Small") {
+            sizePrice = 500;
+        }
+        else if (choosenSize === "Medium") {
+            sizePrice = 700;
+        }
+        else if (choosenSize === "Large") {
+            sizedPrice = 1000;
+        }
+        else {
+            alert("PLEASE SELECT SIZE!");
+        }
+        var crustPrice;
+        var choosenCrust = $("input[name='crust']:checked").val();
+
+        if ((choosenCrust === "Crispy") || (choosenCrust === "Stuffed") && (choosenSize === "Small")) {
+            crustPrice = 100;
+        }
+        else if ((choosenCrust === "Crispy") || (choosenCrust === "Stuffed") && (choosenSize === "Medium")) {
+            crustPrice = 150;
+        }
+        else if ((choosenCrust === "Crispy") || (choosenCrust === "Stuffed") && (choosenSize === "Large")) {
+            crustPrice = 200;
+        }
+        else if ((choosenCrust === "Gluten-free") && (choosenSize === "Small")) {
+            crustPrice = 50;
+        }
+        else if ((choosenCrust === "Gluten-free") && (choosenSize === "Medium")) {
+            crustPrice = 100;
+        } 
+        else if ((choosenCrust === "Gluten-free") && (choosenSize === "Large")) {
+            crustPrice = 150;
+        }
+
+        else {
+            alert("CHOOSE CRUST TO CONTINUE WITH ORDER!");
+        }
+
+
+
+        var addToppings = 0;
+        var choosenToppings = $("#toppings option:selected").val();
+        if ((choosenToppings === "Onions") || (choosenToppings === "Peppers") && (choosenSize === "Small")) {
+            addToppings += 20;
+        }
+        else if ((choosenToppings === "Onions") || (choosenToppings === "Peppers") && (choosenSize === "Large") || (choosenSize === "medium")) {
+            addToppings += 30;
+        }
+        else if ((choosenToppings === "Pepperoni") && (choosenSize = "Small")) {
+            addToppings += 50;
+        }
+        else if ((choosenToppings === "Pepperoni") && (choosenSize = "Medium")) {
+            addToppings += 70;
+        }
+        else if ((choosenToppings === "Pepperoni") && (choosenSize = "Large")) {
+            addToppings += 100;
+        }
+        else if ((choosenToppings === "Bacon") && (choosenSize = "Small")) {
+            addToppings += 80;
+        }
+        else if ((choosenToppings === "Bacon") && (choosenSize = "Medium")) {
+            addToppings += 100;
+        }
+        else if ((choosenToppings === "Bacon") && (choosenSize = "Large")) {
+            addToppings += 150;
+        }
+        else if ((choosenToppings === "Barbecue") || (choosenToppings === "taco") && (choosenSize = "Small")) {
+            addToppings += 100;
+        }
+        else if ((choosenToppings === "Barbecue") || (choosenToppings === "taco") && (choosenSize = "Medium")) {
+            addToppings += 150;
+        }
+        else if ((choosenToppings === "Barbecue") || (choosenToppings === "taco") && (choosenSize = "Large")) {
+            addToppings += 200;
+        }
+        else if ((choosenToppings === "Cheese") || (choosenToppings === "Mushrooms") && (choosenSize = "Large")) {
+            addToppings += 80;
+        }
+        else if ((choosenToppings === "Cheese") || (choosenToppings === "Mushrooms") && (choosenSize = "Large")) {
+            addToppings += 120;
+        }
+        else if ((choosenToppings === "Cheese") || (choosenToppings === "Mushrooms") && (choosenSize = "Large")) {
+            addToppings += 150;
+        }
+        
+
+
+        
+        else {
+            alert("CHOOSE TOPPINGS TO CONTINUE WITH ORDER!");
+        }
+
+        $("#check").click(function () {
+            $("#price").show();
+            $("#order").show();
+            var pizzaNumber = parseInt($("#number").val());
+            var price = "KSH " + (sizePrice + crustPrice + addToppings) * pizzaNumber;
+            $("#pizza-amount").text(price);
+
+            var display = $("#number").val() + " " + $("input[name='size']:checked").val() + " " + $("input[name='crust']:checked").val() + " " + $("#toppings option:selected").val();
+            $("#details").text(display);
+            $("#delivery").show();
+            $("#charges").show();
+            $("#total").show();
+            var total = (sizePrice + crustPrice + addToppings) * pizzaNumber;
+            var totalPrice = "TOTAL COST: KSH: " + (total + 300);
+            $("#total").text(totalPrice);
+
+            
+
+        });
+    });
+});
 
