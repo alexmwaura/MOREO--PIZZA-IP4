@@ -246,9 +246,7 @@ h1{
     background: black;
     opacity: 0.8;
 }
-.final{
-    /* opacity: 0.8; */
-}
+
 
 #number{
     font-size: 20px;
@@ -320,11 +318,19 @@ button[type=submit]{
     float: right;
 }
 @media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
+    .nav-toggle-btn { width:50%; }
+    .content { width:100%; margin:0; border:none; }
+    .content {background-image: url(../IMAGES/wine.jpg)}
+    .content{background-repeat: none;}
+    .content{background-size: cover;}
+    .content{background-position: center;}
 }
 
 @media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
+    .nav-toggle-btn { width:50%; }
+    .content { width:100%; margin:0; border:none; }
+    .content {background-image: url(../IMAGES/tukule.jpg)}
+    .content{background-repeat: none;}
+    .content{background-size: cover;}
+    .content{background-position: center;}
 }
