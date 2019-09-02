@@ -231,10 +231,10 @@ $(document).ready(function () {
 
     $("#deliver").click(function () {
         alert("ENTER NAME PLEASE");
-        var personName = prompt("INPUT NAME..")
+        var personName = prompt("ENTER NAME..");
         alert("ENTER, YOUR LOCATION PLEASE!");
-        var location = prompt("INPUT ADDRESS PLEASE!");
-        alert(personName +  "YOUR ORDER HAS BEEN RECIEVED AND WILL BE DELIVERED AT " + location);
+        var location = prompt("ENTER ADDRESS PLEASE!..");
+        alert(personName + " " + "your order has been recieved and will be delivered at " + " " + location);
 
         $("#check").show();
         var sizePrice;
